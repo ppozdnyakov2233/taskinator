@@ -284,6 +284,12 @@ for (var i = 0; i < savedTasks.length; i++) {
 
 
 
+// Create a new task
+formEl.addEventListener("submit", taskFormHandler);
+
+// for edit and delete buttons
+pageContentEl.addEventListener("click", taskButtonHandler);
+
 // for changing the status
 pageContentEl.addEventListener("change", taskStatusChangeHandler);
 
